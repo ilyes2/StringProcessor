@@ -8,11 +8,11 @@ public class StepTwo implements StepsInterface {
             char c = s.charAt(i);
             if(c == '3')
                 res += "Foo";
-            if(c == '5')
+            else if(c == '5')
                 res += "Bar";
-            if(c == '7')
+            else if(c == '7')
                 res += "Qix";
-            if(c == '0')
+            else if(c == '0')
                 res += "*";
         }
         return res.isEmpty() ? s : res;
